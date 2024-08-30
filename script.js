@@ -13,6 +13,7 @@ function validateSyntax() {
         result = "Invalid Syntax";
     }
 
+//display the results 
             document.getElementById('result').innerText = result;
 }
 
