@@ -5,7 +5,13 @@ function validateSyntax() {
      
     //regular expression
     const regex =/^pet_[a-zA-Z0-9]+$/;
-    
+     
+    //validates the input aginst the regular expression 
+    if(regex.test(input)) {
+        result = "Valid syntax";
+    } else {
+        result = "Invalid Syntax";
+    }
 
             document.getElementById('result').innerText = result;
 }
