@@ -4,7 +4,7 @@ function validateSyntax() {
     let result = ''; // Placeholder for validation result
      
     //regular expression
-    const regex =/^pet_[a-zA-Z0-9]+$/;
+    const regex =/^pet_\d{4}[a-zA-Z]*$/;
      
     //validates the input aginst the regular expression 
     if(regex.test(input)) {
